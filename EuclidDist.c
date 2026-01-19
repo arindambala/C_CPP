@@ -1,6 +1,6 @@
 /*
 
-* Basic computational geometry exercise - Euclideon Distance.
+* Basic computational geometry exercise - Euclidean Distance.
 * Did this back in first year (2019) of university, sigh....</3.
 * (c) 2026, Arindam Bala.
 
