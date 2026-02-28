@@ -134,7 +134,7 @@ int main()
     {
         cout << "Point " << (i + 1) << ": ";
         cin >> x >> y;
-        points.emplace_back(x, y);
+        points.emplace_back(x, y); // Check definition
     }
 
     findFarthestPair(points);
