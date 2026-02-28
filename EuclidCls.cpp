@@ -104,40 +104,4 @@ void findFarthestPair(const vector<Point> &points)
     cout << "\n |> Farthest pair : (" << p1.x << "," << p1.y << ") and (" << p2.x << "," << p2.y << ") with Distance : " << maxDist << endl;
 }
 
-/* =======================
-    Main Function
-   ======================= */
-
-int main()
-{
-    double x, y;
-
-    cout << "\n\nEnter Point 1 (x y) : ";
-    cin >> x >> y;
-    Point p1(x, y);
-
-    cout << "\nEnter Point 2 (x y) : ";
-    cin >> x >> y;
-    Point p2(x, y);
-
-    Rectangle rect(p1, p2);
-    cout << fixed << setprecision(2);
-    cout << "\n\n Rectangle Area : " << rect.area() << endl;
-
-    // Farthest Pair
-    int numPoints = 4;
-    vector<Point> points;
-
-    cout << "\nEnter " << numPoints << " points for farthest pair search : \n";
-
-    for (int i = 0; i < numPoints; ++i)
-    {
-        cout << "Point " << (i + 1) << ": ";
-        cin >> x >> y;
-        points.emplace_back(x, y); // Check definition
-    }
-
-    findFarthestPair(points);
-
-    return 0;
-}
+// 
