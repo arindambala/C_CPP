@@ -9,6 +9,8 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <iomanip>
+#include <algorithm>
 
 using namespace std;
 
@@ -82,3 +84,40 @@ void findFarthestPair(const vector<Point>& points) {
 /* =======================
     Main Function
    ======================= */
+
+int main() 
+{
+    /* // Optimization for faster I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); */
+
+    double x, y;
+    
+    cout << "\n\nEnter Point 1 (x y) : ";
+    if (!(cin >> x >> y)) return 1;
+    Point p1(x, y);
+
+    cout << "\nEnter Point 2 (x y) : ";
+    if (!(cin >> x >> y)) return 1;
+    Point p2(x, y);
+
+    Rectangle rect(p1, p2);
+    cout << fixed << setprecision(2);
+    cout << "Rectangle Area: " << rect.area() << "\n";
+
+    const int numPoints = 4;
+    vector<Point> points;
+    points.reserve(numPoints); 
+
+    cout << "\nEnter " << numPoints << " points for the farthest-pair search: \n";
+    for(int i = 0; i < numPoints; ++i) {
+        cout << "Point " << i + 1 << ": ";
+        if (cin >> x >> y) {
+            points.emplace_back(x, y);
+        }
+    }
+
+    findFarthestPair(points);
+
+    return 0;
+}
