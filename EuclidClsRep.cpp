@@ -43,10 +43,42 @@ class Rectangle
         Point lle, upr;
     
     public:
-        Rectangle(Point a, Point b)
+        Rectangle(const Point& a, const Point& b)
             : lle( min(a.x, b.x), min(a.y, b.y) ), upr( max(a.x, b.x), max(a.y, b.y) ) {}
         
         double area() const {
             return (upr.x - lle.x) * (upr.y - lle.y);
         }
+
+        bool contains(const Point& p) const {
+            return (p.x >= lle.x && p.x <= upr.x && p.y >= lle.y && p.y <= upr.y);
+        }
 };
+
+/* =======================
+    Geometry Logic
+   ======================= */
+
+void findFarthestPair(const vector<Point>& points) {
+    if (points.size() < 2) return;
+
+    double maxDist = -1.0;
+    Point p1, p2;
+
+    for (size_t i = 0; i < points.size(); ++i) {
+        for (size_t j = i + 1; j < points.size(); ++j) {
+            double d = points[i].distanceTo(points[j]);
+            if (d > maxDist) {
+                maxDist = d;
+                p1 = points[i];
+                p2 = points[j];
+            }
+        }
+    }
+
+    cout << "\n |> Farthest pair: (" << p1.x << "," << p1.y << ") and (" << p2.x << "," << p2.y << ")\n |> Distance: " << maxDist << "\n";
+}
+
+/* =======================
+    Main Function
+   ======================= */
