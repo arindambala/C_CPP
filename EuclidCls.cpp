@@ -74,3 +74,34 @@ class Rectangle
             return contains(other.lle) && contains(other.upr);
         }
 };
+
+/* =======================
+    Geometry Logic
+   ======================= */
+
+void findFarthestPair(const vector<Point> &points)
+{
+    if (points.size() < 2) return;
+
+    double maxDist = -1.0;
+    Point p1, p2;
+
+    for (size_t i = 0; i < points.size(); ++i)
+    {
+        for (size_t j = i + 1; j < points.size(); ++j)
+        {
+            double d = points[i].distanceTo(points[j]);
+
+            if (d > maxDist)
+            {
+                maxDist = d;
+                p1 = points[i];
+                p2 = points[j];
+            }
+        }
+    }
+
+    cout << "\n |> Farthest pair : (" << p1.x << "," << p1.y << ") and (" << p2.x << "," << p2.y << ") with Distance : " << maxDist << endl;
+}
+
+// 
