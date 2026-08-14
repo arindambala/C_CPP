@@ -3,6 +3,9 @@
 
 int main()
 {
+    char characterName[] = "John Doe";
+    int characterAge = 35;
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -10,10 +13,10 @@ int main()
 
     printf("\n");
 
-    printf("There once was a man named John Doe.\n");
-    printf("He was 35 years old.\n");
-    printf("He really liked the name John Doe,\n");
-    printf("but did not like being 35.\n");
+    printf("There once was a man named %s.\n", characterName);
+    printf("He was %d years old.\n", characterAge);
+    printf("He really liked the name %s,\n", characterName);
+    printf("but did not like being %d.\n", characterAge);
 
     return 0;
 }
