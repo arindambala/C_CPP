@@ -6,6 +6,11 @@ int main()
     char characterName[] = "John Doe";
     int characterAge = 35;
 
+    int age = 50;
+    double gpa = 3.7;
+    char grade = 'D';
+    char str[] = "StrawberryMilk";
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -18,6 +23,11 @@ int main()
     characterAge = 40;
     printf("He really liked the name %s,\n", characterName);
     printf("but did not like being %d.\n", characterAge);
+
+    printf("\nTeam ChocolateMilk v\\s Team %s!", str);
+    printf("\nMax. Age : %d", age);
+    printf("\nCut-Off : %.2f", gpa);
+    printf("\nMin. Grade : %c", grade);
 
     return 0;
 }
