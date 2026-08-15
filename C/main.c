@@ -3,6 +3,8 @@
 
 int main()
 {
+    const int fab_num = 5;
+
     char characterName[] = "John Doe";
     int characterAge = 35;
 
@@ -20,14 +22,20 @@ int main()
 
     printf("There once was a man named %s.\n", characterName);
     printf("He was %d years old.\n", characterAge);
-    characterAge = 40;
+    // characterAge = 40;
     printf("He really liked the name %s,\n", characterName);
     printf("but did not like being %d.\n", characterAge);
+
+    /*
+        TODO: Comments
+    */
 
     printf("\nTeam ChocolateMilk v\\s Team %s!", str);
     printf("\nMax. Age : %d", age);
     printf("\nCut-Off : %.2f", gpa);
-    printf("\nMin. Grade : %c", grade);
+    printf("\nMin. Grade : %c\n", grade);
+
+    printf("\nFavourite number do be %d!\n", fab_num);
 
     return 0;
 }
