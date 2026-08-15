@@ -13,6 +13,8 @@ int main()
     char grade = 'D';
     char str[] = "StrawberryMilk";
 
+    int in_num;
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -36,6 +38,10 @@ int main()
     printf("\nMin. Grade : %c\n", grade);
 
     printf("\nFavourite number do be %d!\n", fab_num);
+
+    printf("\nWhat's thy favourite number? :\t");
+    scanf("%d", &in_num);
+    printf("Thy favourite number do be %d!\n", in_num);
 
     return 0;
 }
