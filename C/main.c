@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main()
 {
@@ -55,11 +56,13 @@ int main()
 
     while (getchar() != '\n' && !feof(stdin));
 
-    printf("Bars - %s!", phrase);
+    printf("Bars - %s!\n", phrase);
 
     printf("\nWhat's thy favourite second phrase? :\t");
     fgets(phraseTwo, 20, stdin);
-    printf("Bars - %s!", phraseTwo);
+
+    phraseTwo[strcspn(phraseTwo, "\n")] = '\0';
+    printf("Bars - %s!\n", phraseTwo);
 
     return 0;
 }
