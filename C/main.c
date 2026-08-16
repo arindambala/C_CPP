@@ -16,6 +16,7 @@ int main()
     int in_num;
     double pct;
     char phrase[20];
+    char phraseTwo[20];
 
     printf("   /|\n");
     printf("  / |\n");
@@ -47,11 +48,18 @@ int main()
 
     printf("\nWhat's thy estimated percentage of victory? :\t");
     scanf("%lf", &pct);
-    printf("Thy estimated percentage do be %.f!\n", pct);
+    printf("Thy estimated percentage do be %f!\n", pct);
 
     printf("\nWhat's thy favourite phrase? :\t");
     scanf("%s", phrase);
+
+    while (getchar() != '\n' && !feof(stdin));
+
     printf("Bars - %s!", phrase);
+
+    printf("\nWhat's thy favourite second phrase? :\t");
+    fgets(phraseTwo, 20, stdin);
+    printf("Bars - %s!", phraseTwo);
 
     return 0;
 }
