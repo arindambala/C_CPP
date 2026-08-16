@@ -14,6 +14,7 @@ int main()
     char str[] = "StrawberryMilk";
 
     int in_num;
+    double pct;
 
     printf("   /|\n");
     printf("  / |\n");
@@ -42,6 +43,10 @@ int main()
     printf("\nWhat's thy favourite number? :\t");
     scanf("%d", &in_num);
     printf("Thy favourite number do be %d!\n", in_num);
+
+    printf("\nWhat's thy estimated percentage of victory? :\t");
+    scanf("%lf", &pct);
+    printf("Thy estimated percentage do be %.f!\n", pct);
 
     return 0;
 }
