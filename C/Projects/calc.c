@@ -13,9 +13,10 @@ int main()
     printf("Enter the second number :\t");
     scanf("%lf", &numTwo);
 
-    printf("\nSUM - %.2f & %.2f :\t%.2f", numOne, numTwo, numOne + numTwo);
-    printf("\nDIFF - %.2f & %.2f :\t%.2f", numOne, numTwo, numTwo - numOne);
-    printf("\nPROD - %.2f & %.2f :\t%.2f", numOne, numTwo, numOne * numTwo);
+    printf("\n%-5s - %.2f & %.2f (+) : %.2f", "SUM", numOne, numTwo, numOne + numTwo);
+    printf("\n%-5s - %.2f & %.2f (-) : %.2f", "DIFF", numOne, numTwo, numTwo - numOne);
+    printf("\n%-5s - %.2f & %.2f (*) : %.2f", "PROD", numOne, numTwo, numOne * numTwo);
+    printf("\n%-5s - %.2f & %.2f (/) : %.2f", "DIV", numOne, numTwo, numTwo / numOne);
 
     return 0;
 }
