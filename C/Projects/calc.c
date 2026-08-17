@@ -15,6 +15,7 @@ int main()
 
     printf("\nSUM - %.2f & %.2f :\t%.2f", numOne, numTwo, numOne + numTwo);
     printf("\nDIFF - %.2f & %.2f :\t%.2f", numOne, numTwo, numTwo - numOne);
+    printf("\nPROD - %.2f & %.2f :\t%.2f", numOne, numTwo, numOne * numTwo);
 
     return 0;
 }
