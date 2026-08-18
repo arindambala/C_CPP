@@ -65,4 +65,20 @@ int main()
     printf("\n\n=========================================\n");
     printf("           THE MAD LIBS STORY!           \n");
     printf("=========================================\n\n");
+
+    printf("The morning felt like one of those days. It was kind of a %s morning. Nevertheless, I already had decided to go to %s. \n", adjectiveOne, place);
+    printf("I was waiting for the bus to arrive. While doing so, my eyes caught a glance of a cute spotted %s %s \n", animal, verb);
+    printf("near the man who was selling raw seafood, right next to a pile of %s. \n\n", noun);
+
+    printf("'%s!' I thought to myself,-'That is one of the most %s looking %s's, if I've ever seen any!'\n", exclamation, adjectiveTwo, animal);
+
+    printf("I quickly took out my phone and started filming it,\nnot for long though, since I couldn't afford missing the bus. \n");
+    printf("I still have the video in my Snaps. I sometimes do get reminded of it, \n");
+    printf("whenever I have to eat %s at home.\n\n", food);
+
+    printf("=========================================\n");
+    printf("           THANK YOU FOR PLAYING!           \n");
+    printf("=========================================\n");
+
+    return 0;
 }
