@@ -19,6 +19,8 @@ int main()
     char phrase[20];
     char phraseTwo[20];
 
+    int angelNumbers[] = {111, 222, 333, 444, 555, 666, 777, 888, 999};
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -63,6 +65,8 @@ int main()
 
     phraseTwo[strcspn(phraseTwo, "\n")] = '\0';
     printf("Bars - %s!\n", phraseTwo);
+
+    printf("\n%d\n%d\n%d", angelNumbers[0], angelNumbers[1], angelNumbers[8]);
 
     return 0;
 }
