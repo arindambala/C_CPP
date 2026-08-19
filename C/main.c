@@ -68,5 +68,9 @@ int main()
 
     printf("\n%d\n%d\n%d", angelNumbers[0], angelNumbers[1], angelNumbers[8]);
 
+    printf("\n\n%d", angelNumbers[5]);
+    angelNumbers[5] = 314;
+    printf("\n%d\n", angelNumbers[5]);
+
     return 0;
 }
