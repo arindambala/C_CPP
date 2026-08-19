@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+void func();
+
 int main()
 {
     const int fab_num = 5;
@@ -72,5 +74,12 @@ int main()
     angelNumbers[5] = 314;
     printf("\n%d\n", angelNumbers[5]);
 
+    func();
+
     return 0;
+}
+
+void func()
+{
+    printf("HelloWorld!");
 }
