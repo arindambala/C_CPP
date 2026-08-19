@@ -72,14 +72,15 @@ int main()
 
     printf("\n\n%d", angelNumbers[5]);
     angelNumbers[5] = 314;
-    printf("\n%d\n", angelNumbers[5]);
+    printf("\n%d\n\n", angelNumbers[5]);
 
-    func();
+    func("StrawberryMilk", 1337);
+    func("ChocolateMilk", 8008);
 
     return 0;
 }
 
-void func()
+void func(char User[], int age)
 {
-    printf("HelloWorld!");
+    printf("HelloWorld! - from : %s (%d years old)\n", User, age);
 }
