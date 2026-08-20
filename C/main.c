@@ -23,6 +23,8 @@ int MAX_NUM(int numOne, int numTwo)
     return result;
 }
 
+int MAX_NUMS(int numOne, int numTwo, int numThree);
+
 int main()
 {
     const int fab_num = 5;
@@ -99,7 +101,9 @@ int main()
     printf("\nCubed : %f\n", cube(5.0));
 
     printf("\nMaximum - %d", MAX_NUM(2, 5));
-    printf("\nMaximum - %d", MAX_NUM(11, 9));
+    printf("\nMaximum - %d\n", MAX_NUM(11, 9));
+
+    printf("\nMaximum - %d\n", MAX_NUMS(1, 3, 7));
 
     return 0;
 }
@@ -114,4 +118,26 @@ double cube(double num)
     double result = pow(num, 3);
     return result;
     // printf("Returns?");
+}
+
+int MAX_NUMS(int numOne, int numTwo, int numThree)
+{
+    int result;
+
+    if (numOne >= numTwo && numOne >= numThree)
+    {
+        result = numOne;
+    }
+
+    else if (numTwo >= numOne && numTwo >= numThree)
+    {
+        result = numTwo;
+    }
+
+    else
+    {
+        result = numThree;
+    }
+
+    return result;
 }
