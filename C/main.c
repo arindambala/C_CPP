@@ -6,6 +6,23 @@
 void func(char User[], int age);
 double cube(double num);
 
+int MAX_NUM(int numOne, int numTwo)
+{
+    int result;
+
+    if(numOne > numTwo) 
+    {
+        result = numOne;
+    } 
+    
+    else 
+    {
+        result = numTwo;
+    }
+
+    return result;
+}
+
 int main()
 {
     const int fab_num = 5;
@@ -79,7 +96,10 @@ int main()
     func("StrawberryMilk", 1337);
     func("ChocolateMilk", 8008);
 
-    printf("\nCubed : %f", cube(5.0));
+    printf("\nCubed : %f\n", cube(5.0));
+
+    printf("\nMaximum - %d", MAX_NUM(2, 5));
+    printf("\nMaximum - %d", MAX_NUM(11, 9));
 
     return 0;
 }
