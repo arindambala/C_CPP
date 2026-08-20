@@ -3,8 +3,8 @@
 #include <string.h>
 #include <math.h>
 
-void func();
-double cube();
+void func(char User[], int age);
+double cube(double num);
 
 int main()
 {
@@ -93,4 +93,5 @@ double cube(double num)
 {
     double result = pow(num, 3);
     return result;
+    // printf("Returns?");
 }
