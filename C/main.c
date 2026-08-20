@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 void func();
+double cube();
 
 int main()
 {
@@ -77,10 +79,18 @@ int main()
     func("StrawberryMilk", 1337);
     func("ChocolateMilk", 8008);
 
+    printf("\nCubed : %f", cube(5.0));
+
     return 0;
 }
 
 void func(char User[], int age)
 {
     printf("HelloWorld! - from : %s (%d years old)\n", User, age);
+}
+
+double cube(double num)
+{
+    double result = pow(num, 3);
+    return result;
 }
