@@ -112,17 +112,47 @@ int main()
     printf("\nMaximum - %d\n", MAX_NUMS(1, 3, 7));
 
     checked = checkCondition(5);
-    printf("\n%d", checked);
+    printf("\n%d\n", checked);
 
     printf("\nEnter test marks (0 - 100) : ");
-    scanf("%d", &marks);
+    if(scanf("%d", &marks) != 1)
+    {
+        printf("\nERROR! Invalid input! Please retry.\n");
+        return 0;
+    }
 
     if (marks < 0 || marks > 100)
     {
         printf("\nInvalid score! Please retry with a within range value.\n");
+        return 0;
     }
 
     category = marks / 10;
+
+    switch (category)
+    {
+        case 10:
+            printf("\nLetter Grade : O\n");
+            break;
+        case 9:
+            printf("\nLetter Grade : A\n");
+            break;
+        case 8:
+            printf("\nLetter Grade : B\n");
+            break;
+        case 7:
+            printf("\nLetter Grade : C\n");
+            break;
+        case 6:
+            printf("\nLetter Grade : D\n");
+            break;
+        case 5:
+        case 4:
+            printf("\nLetter Grade : E\n");
+            break;
+        default:
+            printf("\nLetter Grade : F\n");
+    }
 
     return 0;
 }
