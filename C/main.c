@@ -48,6 +48,8 @@ int main()
 
     bool checked;
 
+    int marks, category;
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -111,6 +113,16 @@ int main()
 
     checked = checkCondition(5);
     printf("\n%d", checked);
+
+    printf("\nEnter test marks (0 - 100) : ");
+    scanf("%d", &marks);
+
+    if (marks < 0 || marks > 100)
+    {
+        printf("\nInvalid score! Please retry with a within range value.\n");
+    }
+
+    category = marks / 10;
 
     return 0;
 }
