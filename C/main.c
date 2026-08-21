@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <stdbool.h>
 
 void func(char User[], int age);
 double cube(double num);
@@ -24,6 +25,7 @@ int MAX_NUM(int numOne, int numTwo)
 }
 
 int MAX_NUMS(int numOne, int numTwo, int numThree);
+bool checkCondition(int num);
 
 int main()
 {
@@ -43,6 +45,8 @@ int main()
     char phraseTwo[20];
 
     int angelNumbers[] = {111, 222, 333, 444, 555, 666, 777, 888, 999};
+
+    bool checked;
 
     printf("   /|\n");
     printf("  / |\n");
@@ -105,6 +109,9 @@ int main()
 
     printf("\nMaximum - %d\n", MAX_NUMS(1, 3, 7));
 
+    checked = checkCondition(5);
+    printf("\n%d", checked);
+
     return 0;
 }
 
@@ -140,4 +147,17 @@ int MAX_NUMS(int numOne, int numTwo, int numThree)
     }
 
     return result;
+}
+
+bool checkCondition(int num)
+{
+    if (!(num > 0) || (num % 2 != 0))
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
 }
