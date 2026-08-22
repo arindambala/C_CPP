@@ -27,6 +27,14 @@ int MAX_NUM(int numOne, int numTwo)
 int MAX_NUMS(int numOne, int numTwo, int numThree);
 bool checkCondition(int num);
 
+struct Student
+{
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
+
 int main()
 {
     const int fab_num = 5;
