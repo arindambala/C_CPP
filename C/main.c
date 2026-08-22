@@ -162,6 +162,10 @@ int main()
             printf("\nLetter Grade : F\n");
     }
 
+    struct Student studOne;
+    studOne.age = 25;
+    studOne.gpa = 3.7;
+
     return 0;
 }
 
