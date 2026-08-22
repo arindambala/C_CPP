@@ -168,6 +168,8 @@ int main()
     strcpy(studOne.name, "Jane");
     strcpy(studOne.major, "Literature");
 
+    printf("\nStudent Stats (Name - Age - Major - Gpa) : %s - %d - %s - %.2f\n", studOne.name, studOne.age, studOne.major, studOne.gpa);
+
     return 0;
 }
 
