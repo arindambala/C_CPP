@@ -165,6 +165,8 @@ int main()
     struct Student studOne;
     studOne.age = 25;
     studOne.gpa = 3.7;
+    strcpy(studOne.name, "Jane");
+    strcpy(studOne.major, "Literature");
 
     return 0;
 }
