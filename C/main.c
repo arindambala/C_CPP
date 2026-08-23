@@ -210,6 +210,8 @@ int main()
         printf("\n");
     }
 
+    printf("\nAge - Memory Address : %p\nGpa - Memory Address : %p\nGrade - Memory Address : %p\n", &mem_age, &mem_gpa, &mem_grade);
+
     return 0;
 }
 
