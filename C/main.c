@@ -63,6 +63,10 @@ int main()
 
     int arr[3][2] = {{1, 2}, {3, 5}, {7, 11}};
 
+    int mem_age = 67;
+    double mem_gpa = 6.9;
+    char mem_grade = 'F';
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
