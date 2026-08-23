@@ -193,7 +193,18 @@ int main()
         printf("\n%d", i);
     }
 
-    printf("\n\n%d\n%d", arr[0][0], arr[1][1]);
+    printf("\n\n%d\n%d\n", arr[0][0], arr[1][1]);
+
+    printf("\n");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            printf("%d", arr[i][j]);
+            if (j < 1) { printf(","); }
+        }
+        printf("\n");
+    }
 
     return 0;
 }
