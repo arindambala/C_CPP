@@ -185,6 +185,12 @@ int main()
         indexTwo++;
     } while (indexTwo <= 5);
 
+    printf("\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("\n%d", i);
+    }
+
     return 0;
 }
 
