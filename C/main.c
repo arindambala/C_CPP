@@ -61,6 +61,8 @@ int main()
     int indexOne = 1; 
     int indexTwo = 1;
 
+    int arr[3][2] = {{1, 2}, {3, 5}, {7, 11}};
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -190,6 +192,8 @@ int main()
     {
         printf("\n%d", i);
     }
+
+    printf("\n\n%d\n%d", arr[0][0], arr[1][1]);
 
     return 0;
 }
