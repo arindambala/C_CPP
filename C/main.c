@@ -58,6 +58,9 @@ int main()
 
     int marks, category;
 
+    int indexOne = 1; 
+    int indexTwo = 1;
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
@@ -169,6 +172,18 @@ int main()
     strcpy(studOne.major, "Literature");
 
     printf("\nStudent Stats (Name - Age - Major - Gpa) : %s - %d - %s - %.2f\n", studOne.name, studOne.age, studOne.major, studOne.gpa);
+
+    while (indexOne <= 5)
+    {
+        printf("\n%d", indexOne);
+        indexOne++; // index = index + 1;
+    }printf("\n");
+
+    do
+    {
+        printf("\n%d", indexTwo % 2);
+        indexTwo++;
+    } while (indexTwo <= 5);
 
     return 0;
 }
