@@ -67,6 +67,10 @@ int main()
     double mem_gpa = 6.9;
     char mem_grade = 'F';
 
+    int * ptr_age = &mem_age;
+    double *ptr_gpa = &mem_gpa;
+    char * ptr_grade = &mem_grade;
+
     printf("   /|\n");
     printf("  / |\n");
     printf(" /  |\n");
