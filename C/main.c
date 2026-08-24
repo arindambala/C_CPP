@@ -216,6 +216,8 @@ int main()
 
     printf("\nAge - Memory Address : %p\nGpa - Memory Address : %p\nGrade - Memory Address : %p\n", &mem_age, &mem_gpa, &mem_grade);
 
+    printf("\nAge _ Dereferenced Pointer : %d\nGpa _ Dereferenced Pointer : %f\nGrade _ Dereferenced Pointer : %c\n", *ptr_age, *ptr_gpa, *ptr_grade);
+
     return 0;
 }
 
