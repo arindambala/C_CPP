@@ -8,5 +8,8 @@ int main(void)
 
     printf("HelloWorld!\n");
 
+    counter = counter + 1;
+    counter += 1;
+
     return 0;
 }
