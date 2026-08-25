@@ -17,5 +17,10 @@ int main(void)
         printf("Variable counter is less than 5\n");
     }
 
+    else 
+    {
+        printf("Not less than 5\n");
+    }
+
     return 0;
 }
