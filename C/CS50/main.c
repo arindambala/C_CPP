@@ -11,5 +11,11 @@ int main(void)
     counter = counter + 1;
     counter += 1;
 
+    if (counter < 5)
+    {
+        counter++;
+        printf("Variable counter is less than 5\n");
+    }
+
     return 0;
 }
