@@ -7,6 +7,7 @@ int main(void)
 {
     int counter = 0;
     int i = 1;
+    char answer[50];
 
     printf("HelloWorld!\n");
 
@@ -41,6 +42,10 @@ int main(void)
     {
         printf("\nHelloWorld!");
     }
+
+    printf("\n\nWhat's your name? :\t");
+    scanf("%49s", answer);
+    printf("\nHello, %s", answer);
 
     return 0;
 }
