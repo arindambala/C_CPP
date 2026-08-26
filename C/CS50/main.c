@@ -1,10 +1,12 @@
 /* Harvard's CS50 - Intro to Computer Science */
 
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void)
 {
     int counter = 0;
+    int i = 1;
 
     printf("HelloWorld!\n");
 
@@ -26,6 +28,12 @@ int main(void)
     else 
     {
         printf("Not less than 5\n");
+    }
+
+    while (i <= 5) // while (true) { printf("_"); } - Infinite Loop
+    {
+        printf("\nHelloWorld!");
+        i++;
     }
 
     return 0;
