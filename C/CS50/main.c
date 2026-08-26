@@ -8,6 +8,7 @@ int main(void)
     int counter = 0;
     int i = 1;
     char answer[50];
+    char name[50];
 
     printf("HelloWorld!\n");
 
@@ -45,7 +46,12 @@ int main(void)
 
     printf("\n\nWhat's your name? :\t");
     scanf("%49s", answer);
+    while (getchar() != '\n');
     printf("\nHello, %s", answer);
+
+    printf("\n\nWhat's your name? :\t");
+    fgets(name, sizeof(name), stdin);
+    printf("\nHello, %s", name);
 
     return 0;
 }
