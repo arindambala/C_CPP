@@ -13,6 +13,8 @@ int main(void)
     int integer;
     float floatingPoint;
 
+    int x, y;
+
     printf("HelloWorld!\n");
 
     counter = counter + 1;
@@ -63,6 +65,18 @@ int main(void)
     printf("\n\nFloat : ");
     scanf("%f", &floatingPoint);
     printf("\nHello, %f", floatingPoint);
+
+    printf("\n\nx : ");
+    scanf("%i", &x);
+    printf("y : ");
+    scanf("%i", &y);
+
+    // Arithmetic
+    printf("\nx + y = %i\n", x + y);
+    printf("x - y = %i\n", x - y);
+    printf("x * y = %i\n", x * y);
+    printf("x / y = %i\n", x / y);
+    printf("x mod y = %i\n", x % y);
 
     return 0;
 }
