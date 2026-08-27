@@ -14,6 +14,7 @@ int main(void)
     float floatingPoint;
 
     int x, y;
+    float a, b;
 
     printf("HelloWorld!\n");
 
@@ -77,6 +78,13 @@ int main(void)
     printf("x * y = %i\n", x * y);
     printf("x / y = %i\n", x / y);
     printf("x mod y = %i\n", x % y);
+
+    printf("\na : ");
+    scanf("%f", &a);
+    printf("b : ");
+    scanf("%f", &b);
+    
+    printf("\na / b = %f\n", a / b);
 
     return 0;
 }
