@@ -15,6 +15,8 @@ int main(void)
 
     int x, y;
     float a, b;
+    double c, z;
+    int n;
 
     printf("HelloWorld!\n");
 
@@ -83,8 +85,27 @@ int main(void)
     scanf("%f", &a);
     printf("b : ");
     scanf("%f", &b);
-    
-    printf("\na / b = %f\n", a / b);
+
+    printf("\na / b = %.50f\n", a / b);
+
+    printf("\nc : ");
+    scanf("%lf", &c);
+    printf("z : ");
+    scanf("%lf", &z);
+
+    printf("\nc / z = %.50f\n", c / z);
+
+    printf("\nn : ");
+    scanf("%i", &n);
+
+    if (n % 2 == 0)
+    {
+        printf("Even\n");
+    }
+    else
+    {
+        printf("Odd\n");
+    }
 
     return 0;
 }
