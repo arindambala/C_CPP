@@ -11,6 +11,7 @@ int main(void)
     char name[50];
 
     int integer;
+    float floatingPoint;
 
     printf("HelloWorld!\n");
 
@@ -58,6 +59,10 @@ int main(void)
     printf("\nInteger : ");
     scanf("%i", &integer);
     printf("\nHello, %i", integer);
+
+    printf("\n\nFloat : ");
+    scanf("%f", &floatingPoint);
+    printf("\nHello, %f", floatingPoint);
 
     return 0;
 }
