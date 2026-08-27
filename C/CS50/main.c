@@ -10,6 +10,8 @@ int main(void)
     char answer[50];
     char name[50];
 
+    int integer;
+
     printf("HelloWorld!\n");
 
     counter = counter + 1;
@@ -52,6 +54,10 @@ int main(void)
     printf("\n\nWhat's your name? :\t");
     fgets(name, sizeof(name), stdin);
     printf("\nHello, %s", name);
+
+    printf("\nInteger : ");
+    scanf("%i", &integer);
+    printf("\nHello, %i", integer);
 
     return 0;
 }
