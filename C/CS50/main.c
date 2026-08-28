@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include <limits.h>
 
 void cough(int n);
 int get_pos(void);
@@ -139,7 +140,7 @@ int main(void)
         sleep(1);
     }
 
-    for (int i = -2147483648; ; i -= 1000000000)
+    for (int i = INT_MIN; ; i -= 1000000000)
     {
         printf("\n%i", i);
         sleep(1);
