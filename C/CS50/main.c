@@ -139,6 +139,12 @@ int main(void)
         sleep(1);
     }
 
+    for (int i = -2147483648; ; i -= 1000000000)
+    {
+        printf("\n%i", i);
+        sleep(1);
+    }
+
     return 0;
 }
 
