@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <unistd.h>
 
 void cough(int n);
 int get_pos(void);
@@ -131,6 +132,12 @@ int main(void)
 
     pos_int = get_pos();
     printf("\n%i\n", pos_int);
+
+    for (int i = 1; ; i *= 2)
+    {
+        printf("\n%i", i);
+        sleep(1);
+    }
 
     return 0;
 }
