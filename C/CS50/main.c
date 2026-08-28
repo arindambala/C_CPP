@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+void cough(int n);
+
 int main(void)
 {
     int counter = 0;
@@ -123,5 +125,16 @@ int main(void)
         printf("No\n");
     }
 
+    cough(3);
+
     return 0;
+}
+
+void cough(int n)
+{
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("cough!\n");
+    }
 }
