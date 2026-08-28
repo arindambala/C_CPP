@@ -18,6 +18,8 @@ int main(void)
     double c, z;
     int n;
 
+    char character;
+
     printf("HelloWorld!\n");
 
     counter = counter + 1;
@@ -97,6 +99,7 @@ int main(void)
 
     printf("\nn : ");
     scanf("%i", &n);
+    while (getchar() != '\n');
 
     if (n % 2 == 0)
     {
@@ -105,6 +108,19 @@ int main(void)
     else
     {
         printf("Odd\n");
+    }
+
+    printf("\nCharacter : ");
+    scanf("%c", &character);
+    while (getchar() != '\n');
+
+    if (character == 'Y' || character == 'y')
+    {
+        printf("Yes\n");
+    }
+    else if (character == 'N' || character == 'n')
+    {
+        printf("No\n");
     }
 
     return 0;
