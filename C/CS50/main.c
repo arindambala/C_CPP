@@ -4,6 +4,7 @@
 #include <stdbool.h>
 
 void cough(int n);
+int get_pos(void);
 
 int main(void)
 {
@@ -21,6 +22,7 @@ int main(void)
     int n;
 
     char character;
+    int pos_int;
 
     printf("HelloWorld!\n");
 
@@ -127,6 +129,9 @@ int main(void)
 
     cough(3);
 
+    pos_int = get_pos();
+    printf("\n%i\n", pos_int);
+
     return 0;
 }
 
@@ -137,4 +142,26 @@ void cough(int n)
     {
         printf("cough!\n");
     }
+}
+
+int get_pos(void)
+{
+    int n;
+    char prompt[50];
+
+    printf("\n");
+    do 
+    {
+        printf("Positive Integer : ");
+        if (fgets(prompt, sizeof(prompt), stdin) != NULL)
+        {
+            if (sscanf(prompt, "%d", &n) != 1)
+            {
+                n = -1;
+            }
+        }
+    }
+    while (n < 1);
+
+    return n;
 }
