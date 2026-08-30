@@ -12,5 +12,8 @@ int main()
 {
     int decks;
 
+    puts("\nEnter a number of decks -");
+    scanf("%i", &decks);
+
     return 0;
 }
