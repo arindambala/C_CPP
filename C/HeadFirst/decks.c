@@ -15,5 +15,11 @@ int main()
     puts("\nEnter a number of decks -");
     scanf("%i", &decks);
 
+    if (decks < 1)
+    {
+        puts("That is not a valid number of decks!");
+        return 1;
+    }
+
     return 0;
 }
