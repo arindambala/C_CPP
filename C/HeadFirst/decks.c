@@ -7,3 +7,10 @@
 */
 
 #include <stdio.h>
+
+int main()
+{
+    int decks;
+
+    return 0;
+}
