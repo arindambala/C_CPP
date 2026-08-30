@@ -21,5 +21,7 @@ int main()
         return 1;
     }
 
+    printf("There are %i cards!\n", (decks * 52));
+
     return 0;
 }
