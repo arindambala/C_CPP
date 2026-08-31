@@ -34,5 +34,21 @@ int main()
     
     */
 
+    /* Assume name shorter than 20 chars. */
+    char ex[20];
+    puts("Enter boyfriend's name: ");
+    scanf("%19s", ex);
+    printf("Dear %s.\n\n\tYou're history.\n", ex);
+
+    /*
+    
+    This is a comment.
+    Create an array of 20 characters.
+    Display a message on the screen.
+    Store what the user enters into the array.
+    Display a message including the text entered.
+    
+    */
+
     return 0;
 }
