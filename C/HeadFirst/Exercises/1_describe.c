@@ -27,7 +27,7 @@ int main()
     /*
     
     Create an integer varible and set it to 10.
-    As long as the vaqlue is positive -
+    As long as the value is positive -
     Display a message -
     And decrease the count.
     This is the end of the code that should be repeated.
@@ -47,6 +47,40 @@ int main()
     Display a message on the screen.
     Store what the user enters into the array.
     Display a message including the text entered.
+    
+    */
+
+    char suit = 'H';
+    switch (suit) {
+        case 'C':
+            puts("Clubs");
+            break;
+        case 'D':
+            puts("Diamonds");
+            break;
+        case 'H':
+            puts("Hearts");
+            break;
+        default:
+            puts("Spades");
+    }
+
+    /*
+    
+    Create a character variable & store the letter - 'H'.
+    Look at the value of the variable.
+    Is it 'C'?
+    If so, then display the word - "Clubs."
+    Then skip past the other checks.
+    Is it 'D'?
+    If so, then display the word - "Diamonds."
+    Then skip past the other checks.
+    Is it 'H'?
+    If so, then display the word - "Hearts."
+    Then skip past the other checks.
+    Otherwise....
+    Display the word - "Spades."
+    This is the end of the tests.
     
     */
 
