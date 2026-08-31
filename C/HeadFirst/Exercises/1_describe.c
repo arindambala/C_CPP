@@ -12,10 +12,26 @@ int main()
     
     /*
     
-    Create an integer variable and set it to 11..
+    Create an integer variable and set it to 11.
     Is the count more than 10?
-    if so, display a message on the command prompt.
+    If so, display a message on the command prompt.
 
+    */
+
+    int c = 10;
+    while (c > 0) {
+        puts("I must not write code in class.");
+        c = c - 1;
+    }
+
+    /*
+    
+    Create an integer varible and set it to 10.
+    As long as the vaqlue is positive -
+    Display a message -
+    And decrease the count.
+    This is the end of the code that should be repeated.
+    
     */
 
     return 0;
