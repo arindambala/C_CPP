@@ -25,7 +25,10 @@ int main()
         val = 10;
     } else if (card_name[0] == 'A') {
         val = 11;
+    } else {
+        val = atoi(card_name); // Converts - Text into a Number
     }
+    printf("The card value is: %i\n", val);
 
     return 0;
 }
