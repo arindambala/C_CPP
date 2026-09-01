@@ -11,5 +11,9 @@
 
 int main()
 {
+    char card_name[3];
+    puts("\nEnter the card name: ");
+    scanf("%2s", card_name);
+    
     return 0;
 }
