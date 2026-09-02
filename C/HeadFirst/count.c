@@ -29,5 +29,9 @@ int main()
         val = atoi(card_name);
     }
 
+    // Check if the value is 3 to 6
+    if ((val > 2) && (val < 7))
+        puts("Count has gone up!");
+
     return 0;
 }
