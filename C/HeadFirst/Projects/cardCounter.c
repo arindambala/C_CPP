@@ -34,6 +34,8 @@ int main()
             
             case 'X':
                 continue;
+            
+            default: val = atoi(card_name);
         }
 
     }
