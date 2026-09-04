@@ -36,6 +36,8 @@ int main()
                 continue;
             
             default: val = atoi(card_name);
+
+            if ( (val < 1) || (val > 10) ) { puts("\nIndescribable value!"); continue; }
         }
 
     }
