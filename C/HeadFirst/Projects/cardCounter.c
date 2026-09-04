@@ -20,6 +20,22 @@ int main()
         puts("\nEnter the card name: ");
         scanf("%2s", card_name);
 
+        int val = 0;
+
+        switch (card_name[0])
+        {
+            case 'K': case 'Q': case 'J':
+                val = 10;
+                break;
+            
+            case 'A':
+                val = 11;
+                break;
+            
+            case 'X':
+                continue;
+        }
+
     }
 
     return 0;
