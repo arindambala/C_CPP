@@ -14,7 +14,6 @@ int main()
     char card_name[3];
     int cnt = 0;
 
-
     while (card_name[0] != 'X')
     {
         puts("\nEnter the card name: ");
@@ -37,13 +36,13 @@ int main()
             
             default: val = atoi(card_name);
 
-            if ( (val < 1) || (val > 10) ) { puts("\nIndescribable value!"); continue; }
+            if ( (val < 1) || (val > 10) ) { puts("\nIndescribable value! - (Incorrect card value)"); continue; }
         }
 
         if (val > 2 && val < 7) cnt++;
         else if (val == 10) cnt--;
 
-        printf("\nCurrent count: %i\n", cnt);
+        printf("Current count: %i\n", cnt);
     }
 
     return 0;
