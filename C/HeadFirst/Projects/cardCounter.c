@@ -40,6 +40,10 @@ int main()
             if ( (val < 1) || (val > 10) ) { puts("\nIndescribable value!"); continue; }
         }
 
+        if (val > 2 && val < 7) cnt++;
+        else if (val == 10) cnt--;
+
+        printf("\nCurrent count: %i\n", cnt);
     }
 
     return 0;
