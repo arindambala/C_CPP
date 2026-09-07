@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 
+void go_south_east(int *lat, int *lon);
+
 int main()
 {
     return 0;
