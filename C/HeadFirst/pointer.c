@@ -12,5 +12,8 @@ void go_south_east(int *lat, int *lon);
 
 int main()
 {
+    int latitude = 32;
+    int longitude = -64;
+
     return 0;
 }
