@@ -13,5 +13,7 @@ int main()
 
     // contestants[2] == *choice == contestants[0] == 2
 
+    printf("\nI'm going to pick contestant number .... %i!\n", contestants[2]);
+
     return 0;
 }
