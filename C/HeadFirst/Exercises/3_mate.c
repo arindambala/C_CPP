@@ -11,5 +11,7 @@ int main()
     contestants[1] = contestants[2];
     contestants[2] = *choice;
 
+    // contestants[2] == *choice == contestants[0] == 2
+
     return 0;
 }
