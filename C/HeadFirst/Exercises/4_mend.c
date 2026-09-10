@@ -8,3 +8,8 @@ int main()
 {
     return 0;
 }
+
+void skip(char *msg)
+{
+    puts("");
+}
