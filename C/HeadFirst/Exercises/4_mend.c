@@ -11,5 +11,5 @@ int main()
 
 void skip(char *msg)
 {
-    puts("");
+    puts(msg + 6);
 }
