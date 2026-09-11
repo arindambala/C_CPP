@@ -4,5 +4,8 @@
 
 int main()
 {
+    char *cards = "JQK";
+    char a_card = cards[2];
+
     return 0;
 }
