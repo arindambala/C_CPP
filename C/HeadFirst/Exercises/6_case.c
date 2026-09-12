@@ -15,5 +15,7 @@ int main()
     masked_raider[3] = 'D';
     masked_raider[4] = '!';
 
+    printf("\nMasked Raider is %s, Jimmy is %s!\n", masked_raider, jimmy);
+
     return 0;
 }
