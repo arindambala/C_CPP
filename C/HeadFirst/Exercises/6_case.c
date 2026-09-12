@@ -9,5 +9,11 @@ int main()
 
     printf("\nMasked Raider is %s, Jimmy is %s!\n", masked_raider, jimmy);
 
+    masked_raider[0] = 'D';
+    masked_raider[1] = 'E';
+    masked_raider[2] = 'A';
+    masked_raider[3] = 'D';
+    masked_raider[4] = '!';
+
     return 0;
 }
