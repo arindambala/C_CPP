@@ -16,5 +16,9 @@ int main()
     int total_lines = sizeof(tracks) / sizeof(tracks[0]);
     printf("\nTotal Lines: %d", total_lines);
 
+    printf("\nCharacters at tracks[0][5]: %c", tracks[0][5]);
+    printf("\n%c", tracks[4][6]);
+    printf("\nTrack 3: %s\n", tracks[3]);
+
     return 0;
 }
