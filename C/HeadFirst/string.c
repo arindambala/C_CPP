@@ -13,5 +13,8 @@ int main()
         "The girl from Iwo Jiwa",
     };
 
+    int total_lines = sizeof(tracks) / sizeof(tracks[0]);
+    printf("\nTotal Lines: %d", total_lines);
+
     return 0;
 }
