@@ -9,3 +9,8 @@ int main()
 {
     return 0;
 }
+
+void find_track(char search_for[])
+{
+    int i;
+}
