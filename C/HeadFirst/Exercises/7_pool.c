@@ -15,6 +15,9 @@ void find_track(char search_for[]);
 
 int main()
 {
+    find_track("Dork");
+    find_track("Iwo Jiwa");
+
     return 0;
 }
 
@@ -25,6 +28,6 @@ void find_track(char search_for[])
     for (i = 0; i < 5; i++)
     {
         if (strstr(tracks[i], search_for))
-            printf("\nTrack %i : %s", i, tracks[i]);
+            printf("\nTrack %i : %s\n", i + 1, tracks[i]);
     }
 }
