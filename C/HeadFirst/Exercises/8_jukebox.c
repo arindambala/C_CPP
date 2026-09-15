@@ -28,5 +28,12 @@ int main()
 
     /* This is the correct main() function. */
 
+    char search_for[80];
+    printf("Search for: ");
+    scanf(search_for, 80, stdin);
+    find_track(search_for);
+
+    /* This version is using scanf() and would allow the user to enter 81 characters into the array. */
+
     return 0;
 }
