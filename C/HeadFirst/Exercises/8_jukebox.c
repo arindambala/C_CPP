@@ -21,5 +21,12 @@ int main()
 
     /* This version isn't using the full length of the array. The coder has subtracted one from the length, like one would with scanf(). */
 
+    char search_for[80];
+    printf("Search for: ");
+    fgets(search_for, 80, stdin);
+    find_track(search_for);
+
+    /* This is the correct main() function. */
+
     return 0;
 }
