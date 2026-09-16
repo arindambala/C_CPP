@@ -11,6 +11,14 @@
 
 void find_track(char search_for[]);
 
+char tracks[][80] = {
+    "I left my heart in Harvard Med School",
+    "Newark, Newark - a wonderful town",
+    "Dancing with a Dork",
+    "From here to maternity",
+    "The girl from Iwo Jiwa",
+};
+
 int main()
 {
     return 0;
