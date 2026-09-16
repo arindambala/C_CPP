@@ -23,3 +23,13 @@ int main()
 {
     return 0;
 }
+
+void find_track(char search_for[])
+{
+    int i;
+    for (i = 0; i < 5; i++)
+    {
+        if (strstr(tracks[i], search_for))
+            printf("\nTrack %i: %s", i + 1, tracks[i]);
+    }
+}
