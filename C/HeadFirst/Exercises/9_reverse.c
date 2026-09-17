@@ -7,6 +7,12 @@ void print_reverse(char *s);
 
 int main()
 {
+    char str[] = "HelloWorld";
+
+    printf("\nOriginal: %s", str);
+    printf("\nReversed: ");
+    print_reverse(str);
+
     return 0;
 }
 
