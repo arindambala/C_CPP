@@ -23,6 +23,8 @@ int main()
             printf(",\n");
         else
             started = 1;
+        
+        printf("\n{latitude: %f, longitude: %f, info: '%s'}", latitude, longitude, info);
     }
 
     puts("\n]");
