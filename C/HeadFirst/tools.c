@@ -17,6 +17,14 @@ int main()
 
     puts("data = [");
 
+    while (scanf("%f,%f,%79[^\n]", &latitude, &longitude, info) == 3) // Every character until EOL
+    {
+        if (started)
+            printf(",\n");
+        else
+            started = 1;
+    }
+
     puts("\n]");
 
     return 0;
