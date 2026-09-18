@@ -13,7 +13,7 @@ int main()
     float latitude;
     float longitude;
     char info[80];
-    int started = 0;
+    int started = 0; // False
 
     puts("data = [");
 
@@ -22,7 +22,7 @@ int main()
         if (started)
             printf(",\n");
         else
-            started = 1;
+            started = 1; // True
         
         printf("\n{latitude: %f, longitude: %f, info: '%s'}", latitude, longitude, info);
     }
