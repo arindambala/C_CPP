@@ -10,5 +10,10 @@
 
 int main()
 {
+    float latitude;
+    float longitude;
+    char info[80];
+    int started = 0;
+
     return 0;
 }
