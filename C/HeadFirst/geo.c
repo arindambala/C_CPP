@@ -1,7 +1,7 @@
 /*
 
-* Program to read comma-seperated data from CLI about latitudes & longitudes - Head First C.
-* This code is from the book mentioned above - Page 105.
+* Program to store data in a CSV file - Head First C.
+* This code is from the book mentioned above - Page 115.
 * Display it - JSON format.
 
 */
