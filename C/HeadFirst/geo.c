@@ -14,8 +14,11 @@ int main()
     float longitude;
     char info[80];
     int started = 0;
+    char header[100]; // Skips the header - CSV
 
     puts("data = [");
+
+    fgets(header, sizeof(header), stdin);
 
     while (scanf("%f,%f,%79[^\n]", &latitude, &longitude, info) == 3)
     {
