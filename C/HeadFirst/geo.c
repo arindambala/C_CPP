@@ -24,6 +24,12 @@ int main()
         else
             started = 1;
         
+        if ( (latitude < -90.0) || (longitude > 90.0) )
+        {
+            printf("\nInvalid latitude : %f\n", latitude);
+            return 2;
+        }
+        
         printf("\n{latitude: %f, longitude: %f, info: '%s'}", latitude, longitude, info);
     }
 
