@@ -15,5 +15,9 @@ int main()
     char line[80];
     FILE *in = fopen("spooky.csv", "r");
 
+    FILE *file1 = fopen("ufos.csv", "w");
+    FILE *file2 = fopen("disappearances.csv", "w");
+    FILE *file3 = fopen("others.csv", "w");
+
     return 0;
 }
