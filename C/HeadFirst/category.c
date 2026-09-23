@@ -12,5 +12,8 @@
 
 int main()
 {
+    char line[80];
+    FILE *in = fopen("spooky.csv", "r");
+
     return 0;
 }
