@@ -13,11 +13,19 @@
 int main()
 {
     char line[80];
-    FILE *in = fopen("spooky.csv", "r");
+    FILE *in = fopen("Category/spooky.csv", "r");
 
-    FILE *file1 = fopen("ufos.csv", "w");
-    FILE *file2 = fopen("disappearances.csv", "w");
-    FILE *file3 = fopen("others.csv", "w");
+    if (in == NULL)
+    {
+        perror("Error! Unable to open the csv file.");
+        return 1;
+    }
+
+    FILE *file1 = fopen("Category/ufos.csv", "w");
+    FILE *file2 = fopen("Category/disappearances.csv", "w");
+    FILE *file3 = fopen("Category/others.csv", "w");
+
+    fgets(line, sizeof(line), in);
 
     while (fscanf(in, "%79[^\n]\n", line) == 1)
     {
@@ -29,6 +37,7 @@ int main()
             fprintf(file3, "%s\n", line);
     }
 
+    fclose(in);
     fclose(file1);
     fclose(file2);
     fclose(file3);
