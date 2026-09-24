@@ -29,5 +29,9 @@ int main()
             fprintf(file3, "%s\n", line);
     }
 
+    fclose(file1);
+    fclose(file2);
+    fclose(file3);
+
     return 0;
 }
