@@ -16,5 +16,25 @@ int main(int argc, char *argv[]) // argc - Number of arguments | argv - Array of
     int count = 0;
     char ch;
 
+    while ((ch = getopt(argc, argv, "d:t")) != EOF) // POSIX function | Parse CLI-options
+    {
+        switch (ch)
+        {
+            // d - expects an argument
+            case 'd':
+                delivery = optarg;
+                break;
+            
+            // t - boolean flag
+            case 't':
+                thick = 1;
+                break;
+            
+            default:
+                fprintf(stderr, "Obscure option: %s\n", optarg);
+                return 1;
+        }
+    }
+
     return 0;
 }
