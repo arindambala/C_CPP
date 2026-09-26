@@ -36,5 +36,19 @@ int main(int argc, char *argv[]) // argc - Number of arguments | argv - Array of
         }
     }
 
+    // optind - first non-option argument index | Skips past parsed options to access remaining arguments (Ingredients)
+    argc -= optind;
+    argv += optind;
+
+    if (thick)
+        puts("Thick crust.");
+    
+    if (delivery[0])
+        printf("To be delivered %s.\n", delivery);
+
+    puts("Ingredients:");
+    for (count = 0; count < argc; count++)
+        puts(argv[count]);
+
     return 0;
 }
