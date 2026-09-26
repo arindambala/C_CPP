@@ -9,7 +9,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main()
+int main(int argc, char *argv[]) // argc - Number of arguments | argv - Array of argument strings
 {
+    char *delivery = "";
+    int thick = 0;
+    int count = 0;
+    char ch;
+
     return 0;
 }
