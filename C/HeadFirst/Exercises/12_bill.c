@@ -10,6 +10,15 @@ float add_with_tax(float f);
 
 int main()
 {
+    float val;
+
+    printf("\nItem Price: ");
+    while (scanf("%f", &val) == 1)
+    {
+        printf("\nTotal so far: %.2f\n", add_with_tax(val));
+        printf("Item Price: ");
+    }
+
     return 0;
 }
 
