@@ -1,6 +1,7 @@
 // Order changed
 
 #include <stdio.h>
+#include "totaller.h"
 
 float total = 0.0;
 short count = 0;
@@ -15,8 +16,8 @@ int main()
     printf("\nItem Price: ");
     while (scanf("%f", &val) == 1)
     {
-        printf("\nTotal so far: %.2f\n", add_with_tax(val));
-        printf("Item Price: ");
+        printf("Total so far: %.2f\n", add_with_tax(val));
+        printf("\nItem Price: ");
     }
 
     printf("\nFinal Total: %.2f\n", total);
