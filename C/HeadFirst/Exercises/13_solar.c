@@ -9,3 +9,8 @@ int main()
 {
     return 0;
 }
+
+float mercury_day_in_earth_days()
+{
+    return 58.65;
+}
