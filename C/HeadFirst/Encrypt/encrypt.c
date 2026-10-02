@@ -6,7 +6,7 @@ void encrypt(char *message)
 
     while (*message)
     {
-        *message = *message ^ 3;
+        *message = *message ^ 31;
         message++;
     }
 }
