@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "encrypt.h"
 
 int main()
 {
