@@ -7,6 +7,9 @@ void label(const char *name, const char *species, int teeth, int age);
 
 int main()
 {
+    catalog("Snappy", "Piranha", 69, 4);
+    label("Snappy", "Piranha", 69, 4);
+
     return 0;
 }
 
@@ -19,5 +22,5 @@ void catalog(const char *name, const char *species, int teeth, int age)
 /* Print the label for the tank */
 void label(const char *name, const char *species, int teeth, int age)
 {
-    printf("\nName:%s\nSpecies:%s\n%i years old & %i teeth!\n", name, species, teeth, age);
+    printf("\nName: %s\nSpecies: %s\nA %i years old with %i teeth!\n", name, species, teeth, age);
 }
