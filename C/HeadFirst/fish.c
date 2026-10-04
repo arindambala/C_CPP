@@ -7,6 +7,9 @@ struct fish {
     int age;
 };
 
+void catalog(struct fish fih);
+void label(struct fish fih);
+
 int main()
 {
     return 0;
