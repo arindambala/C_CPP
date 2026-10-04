@@ -12,6 +12,11 @@ void label(struct fish fih);
 
 int main()
 {
+    struct fish snappy = {"Snappy", "Piranha", 69, 4};
+
+    catalog(snappy);
+    label(snappy);
+
     return 0;
 }
 
