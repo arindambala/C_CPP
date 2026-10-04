@@ -14,3 +14,15 @@ int main()
 {
     return 0;
 }
+
+/* Print out the catalog entry */
+void catalog(struct fish fih)
+{
+    printf("\n%s is a %s with %i teeth. He is %i!\n", fih.name, fih.species, fih.teeth, fih.age);
+}
+
+/* Print the label for the tank */
+void label(struct fish fih)
+{
+    printf("\nName: %s\nSpecies: %s\nA %i years old with %i teeth!\n", fih.name, fih.species, fih.teeth, fih.age);
+}
