@@ -15,5 +15,7 @@ struct fish {
 
 int main()
 {
+    struct fish snappy = {"Snappy", "Piranha", 69, 4};
+
     return 0;
 }
