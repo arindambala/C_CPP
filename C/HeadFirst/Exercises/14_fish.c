@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+struct meal {
+    const char *ingredients;
+    float weight;
+};
+
 struct preferences {
     struct meal food;
     struct exercise exercise;
