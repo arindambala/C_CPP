@@ -6,7 +6,12 @@ typedef struct {
     const char *suit_material;
 } equipment;
 
-void badge();
+typedef struct scuba {
+    const char *name;
+    equipment kit;
+} diver;
+
+void badge(diver dave);
 
 int main()
 {
