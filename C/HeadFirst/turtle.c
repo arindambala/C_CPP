@@ -10,6 +10,11 @@ void happy_birthday(turtle myr);
 
 int main()
 {
+    turtle myrtle = {"Myrtle", "Leatherback Sea Turtle", 99};
+
+    happy_birthday(myrtle);
+    printf("\nThe %s - %s's age is now %i!\n", myrtle.species, myrtle.name, myrtle.age);
+
     return 0;
 }
 
