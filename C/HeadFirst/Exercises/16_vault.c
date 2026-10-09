@@ -5,6 +5,11 @@ typedef struct {
     float value;
 } swag;
 
+typedef struct {
+    swag *swag;
+    const char *sequence;
+} combination;
+
 int main()
 {
     return 0;
