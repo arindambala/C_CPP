@@ -10,6 +10,11 @@ typedef struct {
     const char *sequence;
 } combination;
 
+typedef struct {
+    combination numbers;
+    const char *make;
+} safe;
+
 int main()
 {
     return 0;
