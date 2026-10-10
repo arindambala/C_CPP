@@ -19,6 +19,7 @@ int main()
 {
     swag gold = {"GOLD!", 1000000.0};
     combination numbers = {&gold, "6502"};
+    safe s = {numbers, "RAMACON250"};
 
     return 0;
 }
