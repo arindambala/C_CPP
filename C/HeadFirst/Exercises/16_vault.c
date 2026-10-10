@@ -21,5 +21,7 @@ int main()
     combination numbers = {&gold, "6502"};
     safe s = {numbers, "RAMACON250"};
 
+    // Display the Au in the safe with:
+    printf("\nContents = %s\n", s.numbers.swag -> description);
     return 0;
 }
