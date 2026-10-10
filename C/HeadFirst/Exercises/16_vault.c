@@ -17,5 +17,8 @@ typedef struct {
 
 int main()
 {
+    swag gold = {"GOLD!", 1000000.0};
+    combination numbers = {&gold, "6502"};
+
     return 0;
 }
