@@ -7,5 +7,8 @@ typedef union {
 
 int main()
 {
+    cupcake order = {2};
+    printf("\nCupcakes Quantity - %i\n", order.count);
+
     return 0;
 }
