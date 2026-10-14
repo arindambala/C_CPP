@@ -17,9 +17,31 @@ typedef struct {
     unit_of_measure units;
 } fruit_order;
 
-void display();
+void display(fruit_order order);
 
 int main()
 {
+    fruit_order apples = {"apples", "England", .amount.count = 144, COUNT};
+    fruit_order strawberries = {"strawberries", "Spain", .amount.weight = 17.6, POUNDS};
+    fruit_order oj = {"orange juice", "U.S.A", .amount.volume = 10.5, PINTS};
+
+    display(apples);
+    display(strawberries);
+    display(oj);
+
+    printf("\n");
+
     return 0;
+}
+
+void display(fruit_order order)
+{
+    printf("\nThis order contains ");
+
+    if (order.units == PINTS)
+        printf("%2.2f pints of %s for %s", order.amount.volume, order.name, order.country);
+    else if (order.units == POUNDS)
+        printf("%2.2f lbs of %s for %s", order.amount.weight, order.name, order.country);
+    else
+        printf("%i %s for %s", order.amount.count, order.name, order.country);
 }
