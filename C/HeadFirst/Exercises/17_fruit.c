@@ -4,6 +4,12 @@ typedef enum {
     COUNT, POUNDS, PINTS
 } unit_of_measure;
 
+typedef union {
+    short count;
+    float weight;
+    float volume;
+} quantity;
+
 void display();
 
 int main()
