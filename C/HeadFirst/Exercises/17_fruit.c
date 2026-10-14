@@ -10,6 +10,13 @@ typedef union {
     float volume;
 } quantity;
 
+typedef struct {
+    const char *name;
+    const char *country;
+    quantity amount;
+    unit_of_measure units;
+} fruit_order;
+
 void display();
 
 int main()
