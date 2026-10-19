@@ -8,8 +8,15 @@ typedef struct island {
     struct island *next;
 } island;
 
+island* create(char *name);
+
 int main()
 {
+    char name[80];
+
+    fgets(name, 80, stdin);
+    island *p_island0 = create(name);
+
     return 0;
 }
 
