@@ -17,6 +17,11 @@ int main()
     fgets(name, 80, stdin);
     island *p_island0 = create(name);
 
+    fgets(name, 80, stdin);
+    island *p_island1 = create(name);
+
+    p_island0 -> next = p_island1;
+
     return 0;
 }
 
