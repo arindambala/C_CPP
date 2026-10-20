@@ -9,6 +9,7 @@ typedef struct island {
 } island;
 
 island* create(char *name);
+void display(island *start);
 
 int main()
 {
