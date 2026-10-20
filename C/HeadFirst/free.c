@@ -23,6 +23,8 @@ int main()
 
     p_island0 -> next = p_island1;
 
+    display(p_island0);
+
     return 0;
 }
 
@@ -36,4 +38,12 @@ island* create(char *name)
     i -> next = NULL;
 
     return i;
+}
+
+void display(island *start)
+{
+    island *p_island = start;
+
+    for(; p_island != NULL; p_island = p_island -> next)
+        printf("\nName - %s\nOpen : %s-%s\n", p_island -> name, p_island -> opens, p_island -> closes);
 }
