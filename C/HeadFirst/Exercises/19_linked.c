@@ -20,6 +20,8 @@ int main()
         next = create(name);
         if (start == NULL)
             start = next;
+        if (i != NULL)
+            i -> next = next;
     }
 
     return 0;
