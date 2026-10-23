@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct island {
     char *name;
@@ -10,6 +11,7 @@ typedef struct island {
 
 island* create(char *name);
 void display(island *start);
+void release(island *start);
 
 int main()
 {
@@ -20,6 +22,7 @@ int main()
 
     for (; fgets(name, 80, stdin) != NULL; i = next)
     {
+        name[strcspn(name, "\r\n")] = 0; // Removes the trailing newline
         next = create(name);
         if (start == NULL)
             start = next;
@@ -28,6 +31,7 @@ int main()
     }
 
     display(start);
+    release(start);
 
     return 0;
 }
@@ -50,4 +54,17 @@ void display(island *start)
 
     for(; i != NULL; i = i -> next)
         printf("\nName - %s\nOpen : %s-%s\n", i -> name, i -> opens, i -> closes);
+}
+
+void release(island *start)
+{
+    island *i = start;
+    island *next = NULL;
+
+    for(; i != NULL; i = next)
+    {
+        next = i -> next;
+        free(i -> name);
+        free(i);
+    }
 }
