@@ -8,6 +8,9 @@ typedef struct island {
     struct island *next;
 } island;
 
+island* create(char *name);
+void display(island *start);
+
 int main()
 {
     island *start = NULL;
@@ -24,5 +27,27 @@ int main()
             i -> next = next;
     }
 
+    display(start);
+
     return 0;
+}
+
+island* create(char *name)
+{
+    island *i = malloc(sizeof(island));
+
+    i -> name = strdup(name);
+    i -> opens = "09:00";
+    i -> closes = "17:00";
+    i -> next = NULL;
+
+    return i;
+}
+
+void display(island *start)
+{
+    island *i = start;
+
+    for(; i != NULL; i = i -> next)
+        printf("\nName - %s\nOpen : %s-%s\n", i -> name, i -> opens, i -> closes);
 }
