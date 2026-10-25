@@ -25,4 +25,9 @@ void find()
 
     puts("Search results:");
     puts("-----------------------------------------------");
+
+    for (i = 0; i < NUM_ADS; i++)
+    {
+        printf("%s\n", ADS[i]);
+    }
 }
