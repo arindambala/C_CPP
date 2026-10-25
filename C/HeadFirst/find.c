@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void find();
+
 int main()
 {
     int NUM_ADS = 7;
@@ -15,4 +17,12 @@ int main()
     };
 
     return 0;
+}
+
+void find()
+{
+    int i;
+
+    puts("Search results:");
+    puts("-----------------------------------------------");
 }
