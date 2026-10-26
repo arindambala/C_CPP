@@ -18,6 +18,8 @@ int main()
         "Jed : DBM likes theater, books and dining"
     };
 
+    find(NUM_ADS, ADS);
+
     return 0;
 }
 
@@ -25,8 +27,8 @@ void find(int num_ads, char *ads[])
 {
     int i;
 
-    puts("Search results:");
-    puts("-----------------------------------------------");
+    puts("\nSearch results:");
+    puts("---------------------------------------------");
 
     for (i = 0; i < num_ads; i++)
     {
@@ -34,5 +36,5 @@ void find(int num_ads, char *ads[])
             printf("%s\n", ads[i]);
     }
 
-    puts("-----------------------------------------------");
+    puts("---------------------------------------------");
 }
