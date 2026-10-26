@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void find();
+void find(int num_ads, char *ads[]);
 
 int main()
 {
@@ -21,17 +21,17 @@ int main()
     return 0;
 }
 
-void find()
+void find(int num_ads, char *ads[])
 {
     int i;
 
     puts("Search results:");
     puts("-----------------------------------------------");
 
-    for (i = 0; i < NUM_ADS; i++)
+    for (i = 0; i < num_ads; i++)
     {
-        if (strstr(ADS[i], "sports") && !strstr(ADS[i], "beiber"))
-            printf("%s\n", ADS[i]);
+        if (strstr(ads[i], "sports") && !strstr(ads[i], "beiber"))
+            printf("%s\n", ads[i]);
     }
 
     puts("-----------------------------------------------");
