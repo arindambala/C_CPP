@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void find();
 
@@ -28,6 +30,9 @@ void find()
 
     for (i = 0; i < NUM_ADS; i++)
     {
-        printf("%s\n", ADS[i]);
+        if (strstr(ADS[i], "sports") && !strstr(ADS[i], "beiber"))
+            printf("%s\n", ADS[i]);
     }
+
+    puts("-----------------------------------------------");
 }
