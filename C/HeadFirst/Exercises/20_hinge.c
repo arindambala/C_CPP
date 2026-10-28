@@ -24,6 +24,7 @@ int main()
     };
 
     find(NUM_ADS, ADS, sports_no_beiber);
+    find(NUM_ADS, ADS, sports_or_workout);
 
     return 0;
 }
