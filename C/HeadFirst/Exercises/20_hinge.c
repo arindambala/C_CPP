@@ -7,7 +7,7 @@ int sports_or_workout(char *s);
 int ns_theater(char *s);
 int arts_theater_or_dining(char *s);
 
-void find(int (*match)(char*));
+void find(int num_ads, char **ads, int (*match)(char*));
 
 int main()
 {
@@ -23,6 +23,8 @@ int main()
         "Jed : DBM likes theater, books and dining"
     };
 
+    find(NUM_ADS, ADS, sports_no_beiber);
+
     return 0;
 }
 
@@ -31,7 +33,7 @@ int sports_or_workout(char *s) { return strstr(s, "sports") || strstr(s, "workin
 int ns_theater(char *s) { return strstr(s, "NS") && strstr(s, "theater"); }
 int arts_theater_or_dining(char *s) { return strstr(s, "arts") || strstr(s, "theater") || strstr(s, "dining"); }
 
-void find(int (*match)(char*))
+void find(int num_ads, char **ads, int (*match)(char*))
 {
     int i;
 
@@ -40,7 +42,7 @@ void find(int (*match)(char*))
 
     for (i = 0; i < num_ads; i++)
     {
-        if (strstr(ads[i], "sports") && !strstr(ads[i], "beiber"))
+        if (match(ads[i]))
             printf("%s\n", ads[i]);
     }
 
