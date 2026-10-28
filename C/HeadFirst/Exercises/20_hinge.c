@@ -25,6 +25,8 @@ int main()
 
     find(NUM_ADS, ADS, sports_no_beiber);
     find(NUM_ADS, ADS, sports_or_workout);
+    find(NUM_ADS, ADS, ns_theater);
+    find(NUM_ADS, ADS, arts_theater_or_dining);
 
     return 0;
 }
