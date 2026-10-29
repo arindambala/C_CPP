@@ -25,3 +25,5 @@ typedef struct {
     int width;
     int height;
 } rectangle;
+
+int compare_areas(const void* a, const void* b);
