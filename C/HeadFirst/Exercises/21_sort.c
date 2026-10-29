@@ -20,3 +20,8 @@ int compare_scores_desc(const void* score_a, const void* score_b)
 
     return b - a;
 }
+
+typedef struct {
+    int width;
+    int height;
+} rectangle;
