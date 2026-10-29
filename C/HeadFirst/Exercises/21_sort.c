@@ -12,3 +12,8 @@ int compare_scores(const void* score_a, const void* score_b)
 
     return a - b;
 }
+
+int compare_scores_desc(const void* score_a, const void* score_b)
+{
+    
+}
