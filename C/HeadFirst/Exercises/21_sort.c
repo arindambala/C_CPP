@@ -39,5 +39,8 @@ int compare_areas(const void* a, const void* b)
 
 int compare_names(const void* a, const void* b)
 {
-    
+    char** sa = (char**)a;
+    char** sb = (char**)b;
+
+    return strcmp(*sa, *sb);
 }
