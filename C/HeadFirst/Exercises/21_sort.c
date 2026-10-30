@@ -44,3 +44,5 @@ int compare_names(const void* a, const void* b)
 
     return strcmp(*sa, *sb);
 }
+
+int compare_areas_desc(const void* a, const void* b) { return compare_areas(b,a); } // -compare_areas(a,b);
