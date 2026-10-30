@@ -36,3 +36,8 @@ int compare_areas(const void* a, const void* b)
 
     return area_a - area_b;
 }
+
+int compare_names(const void* a, const void* b)
+{
+    
+}
