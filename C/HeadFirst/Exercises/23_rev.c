@@ -20,6 +20,21 @@ int main()
         {"Matt", SECOND_CHANCE}, {"William", MARRIAGE}
     };
 
+    for (i = 0; i < 4; i++)
+    {
+        switch (res[i].type)
+        {
+            case DUMP:
+                dump(res[i]);
+                break;
+            case SECOND_CHANCE:
+                second_chance(res[i]);
+                break;
+            default:
+                marriage(res[i]);
+        }
+    }
+
     return 0;
 }
 
