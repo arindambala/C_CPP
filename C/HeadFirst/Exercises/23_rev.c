@@ -8,8 +8,17 @@ typedef struct {
     enum response_type type;
 } response;
 
+void dump(response res);
+void second_chance(response res);
+void marriage(response res);
+
 int main()
 {
     int i;
+    response res[] = {
+        {"Mike", DUMP}, {"Luis", SECOND_CHANCE}, 
+        {"Matt", SECOND_CHANCE}, {"William", MARRIAGE}
+    };
+
     return 0;
 }
