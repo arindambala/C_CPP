@@ -22,3 +22,24 @@ int main()
 
     return 0;
 }
+
+void dump(response res)
+{
+    printf("\nDear %s,\n", res.name);
+    puts("Unfortunately your last date contacted us to");
+    puts("say that they will not be seeing you again. :P ");
+}
+
+void second_chance(response res)
+{
+    printf("\nDear %s,\n", res.name);
+    puts("Good news, your last date has asked us to");
+    puts("arrange another meeting. Please call ASAP! :) ");
+}
+
+void marriage(response res)
+{
+    printf("\nDear %s,\n", res.name);
+    puts("Congratulations! Your last date has contacted");
+    puts("us with a proposal of marriage! ;) ");
+}
