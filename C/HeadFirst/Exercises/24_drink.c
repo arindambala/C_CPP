@@ -9,6 +9,10 @@ double total(int args, ...);
 
 int main()
 {
+    printf("\nTotal Price : (MONKEY GLAND + MUDSLIDE) - $%.2f", total(2, MONKEY_GLAND, MUDSLIDE));
+    printf("\nTotal Price : (MONKEY GLAND + MUDSLIDE + FUZZY NAVEL) - $%.2f", total(3, MONKEY_GLAND, MUDSLIDE, FUZZY_NAVEL));
+    printf("\nTotal Price : (ZOMBIE) - $%.2f\n", total(1, ZOMBIE));
+
     return 0;
 }
 
@@ -37,7 +41,7 @@ double total(int args, ...)
     va_list ap;
     va_start(ap, args);
 
-    for (int i = 0; i < args; i++)
+    for (i = 0; i < args; i++)
     {
         enum drink glass = va_arg(ap, enum drink);
         total += price(glass);
