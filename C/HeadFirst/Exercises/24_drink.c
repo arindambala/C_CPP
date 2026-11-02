@@ -28,3 +28,22 @@ double price(enum drink glass)
 
     return 0;
 }
+
+double total(int args, ...)
+{
+    double total = 0;
+    int i;
+
+    va_list ap;
+    va_start(ap, args);
+
+    for (int i = 0; i < args; i++)
+    {
+        enum drink glass = va_arg(ap, enum drink);
+        total += price(glass);
+    }
+
+    va_end(ap);
+
+    return total;
+}
