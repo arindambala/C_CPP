@@ -2,5 +2,13 @@
 
 int checksum(char *message)
 {
-    return 0;
+    int c = 0;
+
+    while (*message)
+    {
+        c += c ^ (int)(*message);
+        message++;
+    }
+
+    return c;
 }
