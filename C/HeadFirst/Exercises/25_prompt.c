@@ -17,5 +17,8 @@ int main()
     /* checksum.o : checksum.c */
     // gcc -c checksum.c -o checksum.o
 
+    /* libhfsecurity.a : encrypt.o checksum.o */
+    // ar -rcs libhfsecurity.a encrypt.o checksum.o */
+
     return 0;
 }
