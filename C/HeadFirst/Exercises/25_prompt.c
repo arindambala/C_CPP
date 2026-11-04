@@ -18,7 +18,10 @@ int main()
     // gcc -c checksum.c -o checksum.o
 
     /* libhfsecurity.a : encrypt.o checksum.o */
-    // ar -rcs libhfsecurity.a encrypt.o checksum.o */
+    // ar -rcs libhfsecurity.a encrypt.o checksum.o 
+
+    /* bank_vault : bank_vault.c libhfsecurity.a */
+    // gcc bank_vault.c -I. -L. -lfsecurity -o bank_vault
 
     return 0;
 }
