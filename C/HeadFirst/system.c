@@ -12,5 +12,10 @@ char* now()
 
 int main()
 {
+    char comment[80];
+    char cmd[120];
+
+    system(cmd);
+
     return 0;
 }
