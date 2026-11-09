@@ -17,6 +17,9 @@ int main()
 
     fgets(comment, 80, stdin);
 
+    sprintf( cmd, 
+        "echo '%s %s' >> reports.log");
+
     system(cmd);
 
     return 0;
