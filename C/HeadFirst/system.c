@@ -15,6 +15,8 @@ int main()
     char comment[80];
     char cmd[120];
 
+    fgets(comment, 80, stdin);
+
     system(cmd);
 
     return 0;
