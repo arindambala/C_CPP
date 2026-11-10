@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 char* now()
 {
@@ -20,7 +21,8 @@ int main()
     char comment[80];
     char cmd[120];
 
-    fgets(comment, 80, stdin);
+    if (fgets(comment, sizeof(comment), stdin) != NULL)
+        comment[strcspn(comment, "\n")] = 0;
 
     sprintf( cmd, 
         "echo '%s %s' >> Reports/reports.log",
