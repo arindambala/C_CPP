@@ -5,5 +5,8 @@
 
 int main()
 {
+    if (execl("/sbin/ipconfig", "/sbin/ipconfig", NULL) == -1)
+        return 1;
+    
     return 0;
 }
