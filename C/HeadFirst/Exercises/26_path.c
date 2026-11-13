@@ -6,7 +6,11 @@
 int main()
 {
     if (execl("/sbin/ipconfig", "/sbin/ipconfig", NULL) == -1)
-        return 1;
-    
+        if (execlp("ipconfig", "ipconfig", NULL) == -1)
+        {
+            fprintf(stderr, "\nCannot run ipconfig - %s\n", strerror(errno));
+            return 1;
+        }
+
     return 0;
 }
