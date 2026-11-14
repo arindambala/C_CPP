@@ -10,5 +10,11 @@ int main(int argc, char *argv[])
     if (!w)
         w = argv[argc - 1];
 
+    char *c = getenv("EXTRA");
+
+    if (!c)
+        c = argv[argc - 1];
+    printf("\n%s with %s\n", c, w);
+
     return 0;
 }
