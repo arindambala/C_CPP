@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
 {
     int times = 3;
     char *phrase = argv[1];
+    int i;
 
     return 0;
 }
