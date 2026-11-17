@@ -6,6 +6,8 @@
 
 int main(int argc, char *argv[])
 {
+    char *feeds[] = {};
+
     int times = 3;
     char *phrase = argv[1];
     int i;
