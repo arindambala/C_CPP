@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
     {
         char var[255];
         sprintf(var, "RS_FEED=%s", feeds[i]);
+        char *vars[] = {var, NULL};
     }
 
     return 0;
