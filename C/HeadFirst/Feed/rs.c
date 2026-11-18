@@ -17,6 +17,12 @@ int main(int argc, char *argv[])
         char var[255];
         sprintf(var, "RS_FEED=%s", feeds[i]);
         char *vars[] = {var, NULL};
+
+        if (execle("usr/bin/python3", "usr/bin/python3", "rsgossip.py", phrase, NULL, vars
+        ) == -1) {
+            fprintf(stderr, "\nCan't run script - %s\n", strerror(errno));
+            return 1;
+        }
     }
 
     return 0;
