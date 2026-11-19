@@ -4,9 +4,10 @@
 #include <unistd.h>
 #include <errno.h>
 
-int main()
+int main(int argc, char *argv[])
 {
     int times = 3;
+    char *phrase = argv[1];
 
     return 0;
 }
