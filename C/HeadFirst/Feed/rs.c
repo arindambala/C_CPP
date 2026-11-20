@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
     for (i = 0; i < times; i++)
     {
-        
+        char var[255];
     }
 
     return 0;
