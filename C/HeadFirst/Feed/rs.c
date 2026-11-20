@@ -12,5 +12,10 @@ int main(int argc, char *argv[])
     char *phrase = argv[1];
     int i;
 
+    for (i = 0; i < times; feeds[i])
+    {
+        
+    }
+
     return 0;
 }
