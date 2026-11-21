@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     for (i = 0; i < times; i++)
     {
         char var[255];
+        sprintf(var, "RS_FEED=%s", feeds[i]);
     }
 
     return 0;
