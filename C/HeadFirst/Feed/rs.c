@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    char *feeds[] = {};
+    char *feeds[] = {"https://feeds.bbci.co.uk/sport/football/rss.xml", "https://www.rollingstone.com/music/feed/rss.xml", "https://independent.co.uk/rss.xml"};
 
     int times = 3;
     char *phrase = argv[1];
