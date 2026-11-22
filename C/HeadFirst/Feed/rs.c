@@ -25,9 +25,11 @@ int main(int argc, char *argv[])
             return 1;
         }
 
-        if (execle("usr/bin/python3", "usr/bin/python3", "rsgossip.py", phrase, NULL, vars) == -1) {
-            fprintf(stderr, "\nCan't run script - %s\n", strerror(errno));
-            return 1;
+        if (!pid) {
+            if (execle("usr/bin/python3", "usr/bin/python3", "rsgossip.py", phrase, NULL, vars) == -1) {
+                fprintf(stderr, "\nCan't run script - %s\n", strerror(errno));
+                return 1;
+            }
         }
     }
 
