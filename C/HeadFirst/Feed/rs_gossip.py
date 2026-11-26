@@ -24,3 +24,5 @@ for o, a in opts:
     elif o in ("-h", "--help"):
         usage()
         sys.exit()
+    else:
+        assert False, "Unhandled Option"
