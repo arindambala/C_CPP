@@ -18,3 +18,9 @@ except getopt.GetoptError as err:
     sys.exit(2)
 
 include_urls = False
+for o, a in opts:
+    if o == "-u":
+        include_urls = True
+    elif o in ("-h", "--help"):
+        usage()
+        sys.exit()
